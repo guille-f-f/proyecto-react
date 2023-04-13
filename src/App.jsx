@@ -1,9 +1,11 @@
 import './App.css'
+import './Componentes/BarraNavegacion/Navbar'
+import Navbar from './Componentes/BarraNavegacion/Navbar'
 
 function App() {
   return (
     <div className="App">
-      <h1>Bienvenidos a nuestro proyecto en React!!</h1>
+      <Navbar/>
     </div>
   )
 }
