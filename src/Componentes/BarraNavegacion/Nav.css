@@ -18,8 +18,10 @@
     font-size: 16px;
     text-decoration: none;
     margin: 15px;
+    margin-top: 0;
     position: relative;
     opacity: 0.9;
+    
 }
 
 .Navbar > .nav-items > a:hover{
@@ -44,6 +46,29 @@
 .Navbar > .nav-toggle {
     display: none;
 }
+
+.icono{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    display: inline-flex;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.icono:hover{
+    background-color: #e2f1f8;
+    color: #F9D949;
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 700px){
     .Navbar > .nav-items{
@@ -119,6 +144,6 @@
         transform: rotate(-45deg) translate(26px, 26px);
     }
 
-
-
 }
+
+
