@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../BarraNavegacion/Nav.css'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+// import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,8 +14,8 @@ const Navbar = () => {
         <a href="/contacto">Contacto</a>
         <a href="/preguntas">Preguntas</a>
         
-        <FontAwesomeIcon className="icono" icon={faSearch} />
-        <FontAwesomeIcon className="icono" icon={faShoppingCart} />
+        {/* <FontAwesomeIcon className="icono" icon={faSearch} /> */}
+        {/* <FontAwesomeIcon className="icono" icon={faShoppingCart} /> */}
         
       </div>
     <div
