@@ -2,25 +2,26 @@
 .tarjetas__titulo {
     text-align: center;
     font-size: 40px;
+    margin: 10px;
     text-shadow: 0 0 1px rgb(0, 0, 0);
-    font-weight: 100;
+    font-weight: 50;
 }
 .tarjetas__titulo--color {
     color: rgb(50, 162, 6);
 }
 .tarjetas {
     width: 1170px;
-    margin: 20px auto;
+    margin: auto;
     font-family: sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: #FFF1DC;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 10px;
     justify-content: center;
 }
 .tarjeta {
     width: 270px;
-    border-radius: 20px;
+    /* border-radius: 2px; */
     overflow: hidden;
     box-shadow: 0 0 2px rgba(0, 0, 0, .5);
     transition: .07s;

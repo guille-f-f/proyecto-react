@@ -21,7 +21,7 @@ const UltimasOfertas = () => {
   );
 
   return (
-    <>
+    <section className="section--showsale">
       <h3 className="tarjetas__titulo">SHOW <span className="tarjetas__titulo--color">SALE!!</span></h3>
       <div className="tarjetas">
         {productosRenderizados.map((producto) => {
@@ -55,7 +55,7 @@ const UltimasOfertas = () => {
           }
         })}
       </div>
-    </>
+    </section>
   );
 };
 
