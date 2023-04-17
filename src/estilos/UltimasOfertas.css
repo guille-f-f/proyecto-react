@@ -1,0 +1,50 @@
+/* Estilos de clase */
+.tarjetas__titulo {
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    text-shadow: 0 0 1px rgb(0, 0, 0);
+    font-weight: 50;
+}
+.tarjetas__titulo--color {
+    color: rgb(50, 162, 6);
+}
+.tarjetas {
+    width: 1170px;
+    margin: auto;
+    font-family: sans-serif;
+    background-color: #FFF1DC;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.tarjeta {
+    width: 270px;
+    /* border-radius: 2px; */
+    overflow: hidden;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    transition: .07s;
+}
+.tarjeta__contenedor--imagen {
+    position: relative;
+}
+.tarjeta__imagen {
+    width: 100%;
+    user-select: none;
+}
+.tarjeta__datos {
+    margin: 10px;
+    text-align: end;
+}
+.tarjeta__precio {
+    text-decoration:line-through;
+    font-weight: 300;
+}
+.tarjeta__descuento {
+    color: rgb(50, 162, 6);
+}
+.tarjeta__precio--final {
+    color: rgb(241, 100, 0);
+    font-weight: 700;
+}
