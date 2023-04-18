@@ -6,5 +6,5 @@ const Boton = () => {
     <button className='boton'>SHOWROOM</button>
   )
 }
-
+ 
 export default Boton
