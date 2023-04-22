@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { Productos } from "../App";
+import { Datos } from "../App";
 import '../estilos/UltimasOfertas.css';
 import Boton from "./Boton";
 
 const UltimasOfertas = () => {
-  const productos = useContext(Productos);
+  const productos = useContext(Datos);
   const productosBonificados = productos.filter((producto) => {
     if (producto.descuento) {
       return producto;

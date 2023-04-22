@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Homepage from "../paginas/Homepage";
+import Productos from "../paginas/Productos"
 
 const Rutas = () => {
   return (
@@ -10,6 +11,7 @@ const Rutas = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/productos" element={<Productos />} />
         </Routes>
       </BrowserRouter>
     </div>
