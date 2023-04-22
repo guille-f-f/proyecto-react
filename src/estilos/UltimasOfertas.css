@@ -11,12 +11,11 @@
 }
 .tarjetas {
     width: 1170px;
-    margin: auto;
+    margin: 20px auto 40px;
     font-family: sans-serif;
-    background-color: #FFF1DC;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }
 .tarjeta {
