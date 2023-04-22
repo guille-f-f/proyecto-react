@@ -7,8 +7,8 @@ const Homepage = () => {
   return (
   <>
   <Coleccion />
-  <Carrusel />
   <UltimasOfertas />
+  <Carrusel />
   </>
 )};
 

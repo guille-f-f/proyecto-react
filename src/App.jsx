@@ -3,14 +3,14 @@ import { createContext } from 'react'
 import BaseDeDatos from './datos/productos.json'
 import Rutas from './componentes/Rutas'
 
-export const Productos = createContext(); 
+export const Datos = createContext(); 
 
 function App() {
   return (
     <div className="App">
-      <Productos.Provider value={BaseDeDatos}>
+      <Datos.Provider value={BaseDeDatos}>
         <Rutas />
-      </Productos.Provider>
+      </Datos.Provider>
     </div>
   )
 }
