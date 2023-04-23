@@ -6,8 +6,8 @@ import Coleccion from "../Componentes/NuevaColeccion/Coleccion";
 const Homepage = () => {
   return (
   <>
-  <Coleccion />
   <UltimasOfertas />
+  <Coleccion />
   <Carrusel />
   </>
 )};
