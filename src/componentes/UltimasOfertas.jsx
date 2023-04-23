@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Datos } from "../App";
 import '../estilos/UltimasOfertas.css';
 import Boton from "./Boton";
+import { Container } from "react-bootstrap";
 
 const UltimasOfertas = () => {
   const productos = useContext(Datos);
@@ -26,7 +27,7 @@ const UltimasOfertas = () => {
         {productosRenderizados.map((producto) => {
           if (producto.descuento) {
             return (
-              <div className="tarjeta" key={producto.key}>
+              <div className="tarjeta " key={producto.key}>
                 <div className="tarjeta__contenedor--imagen">
                   <img
                     className="tarjeta__imagen"
