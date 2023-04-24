@@ -12,7 +12,6 @@ const types = {
   remove: "remove",
   removeAll: "remove all",
 };
-
 const reducer = (state, action) => {
   switch (action.type) {
     case types.show:
@@ -79,15 +78,12 @@ const initialProductState = {
 const Productos = () => {
   const [productState, dispatch] = useReducer(reducer, initialProductState);
   const { products, carts, preview } = productState;
-
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   const values = [true, "sm-down", "md-down", "lg-down", "xl-down", "xxl-down"];
   const [fullscreen, setFullscreen] = useState(true);
   const [showCart, setShowCart] = useState(false);
-
   function handleShowCart(breakpoint) {
     setFullscreen(breakpoint);
     setShowCart(true);
@@ -95,7 +91,6 @@ const Productos = () => {
 
   return (
     <div className="container-md text-center">
-      {/* <h1 className="title">Show Room</h1> */}
       <ul className="mt-4 mb-3 list-unstyled d-flex justify-content-between gap-3 flex-wrap">
         {products.map((product) => {
           return (

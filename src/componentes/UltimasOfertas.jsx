@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Datos } from "../App";
 import '../estilos/UltimasOfertas.css';
 import Boton from "./Boton";
-import { Container } from "react-bootstrap";
 
 const UltimasOfertas = () => {
   const productos = useContext(Datos);
