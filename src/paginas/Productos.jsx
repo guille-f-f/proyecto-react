@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import "../estilos/Productos.css";
 import { useState } from "react";
-import Data from "../datos/Productos.json";
+import Data from "../datos/productos.json";
 import { Card, Button, Modal, Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
