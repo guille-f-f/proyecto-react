@@ -11,6 +11,7 @@
 }
 .tarjetas {
     width: 100%;
+    padding: 0;
     margin: 20px auto 40px;
     font-family: sans-serif;
     display: flex;
@@ -66,7 +67,7 @@
         font-size: 50px;
     }
     .tarjetas {
-        gap: 0px 10px;
+        gap: 10px;
     }
     .tarjeta {
         flex-basis: calc(25% - 10px);
