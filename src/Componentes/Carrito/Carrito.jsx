@@ -2,7 +2,7 @@ import React, { useReducer } from 'react'
 import '../../estilos/UltimasOfertas.css'
 import { TYPES } from './actions';
 import { carritoInitialState, carritoReducer } from './carritoReducer';
-import { Button } from 'react-bootstrap'
+import { Button, Modal } from 'react-bootstrap'
 import Producto from './Producto';
 import Item from './Item';
 import VistaPrevia from './VistaPrevia';

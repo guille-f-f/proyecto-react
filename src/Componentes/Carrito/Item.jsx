@@ -8,7 +8,7 @@ const Item = (props) => {
   
   return (
     <li key={id} className='d-flex justify-content-around align-items-baseline m-1'>
-      <h4>{nombre} {marca}</h4>
+      <h4 className='tarjeta__titulo'>{nombre} {marca}</h4>
       <h5>$ {precio} x {cantidad}ud.</h5>
       <h5>$ {precio * cantidad}</h5>
       <Button onClick={() => eliminarDeCarrito(id, false)} variant='danger'>Eliminar uno</Button>
