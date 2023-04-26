@@ -3,6 +3,7 @@ import { createContext } from 'react'
 import BaseDeDatos from './datos/productos.json'
 import Rutas from './componentes/Rutas'
 
+
 export const Datos = createContext(); 
 
 function App() {
