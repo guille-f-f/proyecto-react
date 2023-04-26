@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className='Navbar'>
       <span className='nav-logo'>INDUMENTARIA</span>
       <div className={`nav-items ${isOpen && "open"}`}>
-        <a href="/home">Home</a>
+        <a href="/">Home</a>
         <a href="/productos">Productos</a>
         <a href="/contacto">Contacto</a>
         <a href="/preguntas">Preguntas</a>

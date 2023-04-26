@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { Productos } from "../App";
+import { Datos } from "../App";
 import '../estilos/UltimasOfertas.css';
 import Boton from "./Boton";
 
 const UltimasOfertas = () => {
-  const productos = useContext(Productos);
+  const productos = useContext(Datos);
   const productosBonificados = productos.filter((producto) => {
     if (producto.descuento) {
       return producto;
@@ -26,26 +26,26 @@ const UltimasOfertas = () => {
         {productosRenderizados.map((producto) => {
           if (producto.descuento) {
             return (
-              <div className="tarjeta" key={producto.key}>
+              <div className="tarjeta " key={producto.key}>
                 <div className="tarjeta__contenedor--imagen">
                   <img
                     className="tarjeta__imagen"
-                    src={producto["imagen-1"]}
+                    src={producto.imagen1}
                     alt={`Imagen ${producto.id}`}
                   />
-                  <Boton />
+                  <Boton valor="SHOWROOM" />
                 </div>
                 <div className="tarjeta__datos">
                   <h5>{producto.nombre + " " + producto.marca}</h5>
                   <p>{producto.descripcion}</p>
                   <h3 className="tarjeta__precio">$ {producto.precio}</h3>
                   <h3 className="tarjeta__descuento">
-                    -%{producto["porcentaje-de-descuento"]}
+                    -%{producto.porcentajeDeDescuento}
                   </h3>
                   <h3 className="tarjeta__precio--final">
                     ${" "}
                     {producto.precio -
-                      (producto.precio * producto["porcentaje-de-descuento"]) /
+                      (producto.precio * producto.porcentajeDeDescuento) /
                         100}
                   </h3>
                 </div>

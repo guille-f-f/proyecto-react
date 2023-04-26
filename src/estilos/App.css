@@ -23,6 +23,6 @@ h1, h2, h3, h4, h5, p, button {
 }
 
 .App{
-    background-color: #FFF1DC;
+    /* background-color: #FFF1DC; */
     height: 100vh;
 }
