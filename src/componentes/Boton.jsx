@@ -1,9 +1,10 @@
 import React from 'react';
 import '../estilos/Boton.css';
 
-const Boton = () => {
+const Boton = (props) => {
+  const { valor, accion } = props
   return (
-    <button className='boton'>SHOWROOM</button>
+    <button className='boton' onClick={accion} >{valor}</button>
   )
 }
  
