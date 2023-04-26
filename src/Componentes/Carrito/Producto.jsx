@@ -16,9 +16,9 @@ const Producto = (props) => {
         <Boton valor="AGREGAR" accion={() => agregarAlCarrito(id)} />
       </div>
       <div className='tarjeta__datos'>
-        <h4>{nombre} {marca}</h4>
-        <p>{descripcion}</p>
-        <h5 className={descuento ? 'tarjeta__precio' : ''}>$ {precio}</h5>
+        <h4 className='tarjeta__titulo'>{nombre} {marca}</h4>
+        <p className='tarjeta__descripcion'>{descripcion}</p>
+        <h5 className={descuento ? 'tarjeta__precio--anulado' : 'tarjeta__precio'}>$ {precio}</h5>
           {
             descuento ?
             <>

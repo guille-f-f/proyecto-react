@@ -36,9 +36,9 @@ const UltimasOfertas = () => {
                   <Boton valor="SHOWROOM" />
                 </div>
                 <div className="tarjeta__datos">
-                  <h5>{producto.nombre + " " + producto.marca}</h5>
+                  <h4 className="tarjeta__titulo">{producto.nombre + " " + producto.marca}</h4>
                   <p>{producto.descripcion}</p>
-                  <h3 className="tarjeta__precio">$ {producto.precio}</h3>
+                  <h3 className="tarjeta__precio--anulado">$ {producto.precio}</h3>
                   <h3 className="tarjeta__descuento">
                     -%{producto.porcentajeDeDescuento}
                   </h3>
