@@ -4,6 +4,7 @@ import Carrusel from "../Componentes/Carrusel/Carrusel";
 import Coleccion from "../Componentes/NuevaColeccion/Coleccion";
 import Portada from "../Componentes/Portada";
 import TarjetasConfort from "../Componentes/TarjetasConfort";
+import Descuento from "../Componentes/Descuento";
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
   <Portada />
   <UltimasOfertas />
   <TarjetasConfort />
+  <Descuento />
   <Coleccion />
   <Carrusel />
   </>

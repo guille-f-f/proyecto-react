@@ -1,8 +1,7 @@
 import React from 'react';
 import '../estilos/TarjetasConfort.css';
 import TarjetaConfortComponente from './TarjetaConfortComponente';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMedal, faUndo, faSnowboarding, faHeart } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const TarjetasConfort = () => {

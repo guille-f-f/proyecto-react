@@ -15,7 +15,7 @@ const TarjetaConfortComponente = () => {
             <div className='seccion'>
             <FontAwesomeIcon  className="tarjeta_icono"  icon={faUndo} />
             <h4 className='seccion_titulo'>Colección Sustentable</h4>
-            <p>Ampliamos nuestro catálogo de materiales para incluir elementos reciclados y naturales. Juntos en la lucha por salvar nuestro planeta1</p>
+            <p>Ampliamos nuestro catálogo de materiales para incluir elementos reciclados y naturales. Juntos en la lucha por salvar nuestro planeta!</p>
             </div>
             <div className='seccion'>
             <FontAwesomeIcon className="tarjeta_icono" icon={faSnowboarding} />
