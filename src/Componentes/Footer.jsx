@@ -1,7 +1,7 @@
 import React from 'react';
 import '../estilos/footer.css';
 
-const footer = () =>{
+const Footer = () =>{
     return (
         <footer>
     <div class="pie-de-pagina1">
@@ -51,4 +51,4 @@ const footer = () =>{
     )
 }
 
-export default footer 
+export default Footer 
