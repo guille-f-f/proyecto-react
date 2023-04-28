@@ -65,5 +65,12 @@
     .portada_titulo{
         font-size: 40px;
     }
+
+ @media (max-width: 400px){
+    .portada_subtitulo{
+        font-size: 20px;
+        width: 200px;
+    }
+ }
 }
 }

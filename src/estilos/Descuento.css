@@ -1,0 +1,39 @@
+.descuento_contenedor{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descuento{
+    color: #001A49;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.descuento_titulo{
+    margin: 5px;
+    padding: 15px;
+}
+
+.descuento_boton{
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    background-color: white;
+    border: 5px outset #4444ff;
+    color: black; 
+    text-shadow: -1px -1px rgba(0,0,0,.2);
+}
+
+.descuento_texto{
+    padding: 10px;
+}
