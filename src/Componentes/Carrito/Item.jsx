@@ -1,10 +1,9 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 
-const Item = (props) => {
+const Item = ({data, eliminarDeCarrito}) => {
 
-  const { id, nombre, marca, descripcion, precio, cantidad } = props.data
-  const eliminarDeCarrito = props.eliminarDeCarrito
+  const { id, nombre, marca, descripcion, precio, cantidad } = data;
   
   return (
     <li key={id} className='d-flex justify-content-around align-items-baseline m-1'>
