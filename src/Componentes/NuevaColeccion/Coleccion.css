@@ -72,11 +72,22 @@
     @media (max-width: 500px){
 
         .contenedor{
+            
+            margin-left: 5px;
             height: 800px;
+            width: 400px;
         }
         .imagen{
             width: 175px;
             height: 180px;
+        }
+
+        .contenedor_parrafo{
+            font-size: 25px;
+        }
+
+        .contenedor_parrafo--texto{
+            font-size: 20px;
         }
 }
 

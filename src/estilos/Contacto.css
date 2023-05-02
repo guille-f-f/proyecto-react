@@ -26,4 +26,17 @@
     padding: 10px;
 }
 
+@media (max-width: 900px){
+    .contacto_contenedor-dos{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .direccion_titulo{
+        margin-top: 20px;
+    }
+}
+
 
