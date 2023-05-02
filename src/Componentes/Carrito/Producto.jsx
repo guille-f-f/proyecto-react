@@ -4,7 +4,7 @@ import Boton from '../Boton'
 import MostrarProducto from './MostrarProducto'
 
 const Producto = ({data, agregarAlCarrito ,mostrarProducto}) => {
-  const { id, imagen1, marca, nombre, descripcion, precio, descuento, porcentajeDeDescuento } = data
+  const { id, marca, nombre, descripcion, precio, descuento, porcentajeDeDescuento } = data
   const precioConDescuento = precio - (precio * porcentajeDeDescuento / 100)
   
   return (

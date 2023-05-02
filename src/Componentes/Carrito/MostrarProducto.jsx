@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
+import CarouselComponent from "./CarouselComponent";
 
 const MostrarProducto = ({data, mostrarProducto, agregarAlCarrito }) => {
 
-  const {id, nombre, imagen1, precio} = data;
+  const {id, nombre, imagen1, imagen2, imagen3, precio} = data;
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -12,7 +13,13 @@ const MostrarProducto = ({data, mostrarProducto, agregarAlCarrito }) => {
     handleShow();
     mostrarProducto(id);
   }
-  
+
+  const imagenes = {
+    imagen1: imagen1,
+    imagen2: imagen2,
+    imagen3: imagen3
+  }
+
   return (
     <>
       <img
@@ -28,7 +35,7 @@ const MostrarProducto = ({data, mostrarProducto, agregarAlCarrito }) => {
           <Modal.Title>{nombre}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={imagen1} alt="Imagen" className="w-100" />
+          <CarouselComponent imagenes={imagenes} />
           <h4 className="m-1">$ {precio},00</h4>
         </Modal.Body>
         <Modal.Footer>
