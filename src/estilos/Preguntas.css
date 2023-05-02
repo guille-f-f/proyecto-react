@@ -2,7 +2,6 @@
 .preguntas_titulo{
     display: flex;
     justify-content: center;
-    margin: 5px;
     padding: 10px;
     color: black;
 }

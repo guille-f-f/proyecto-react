@@ -4,7 +4,7 @@ import BasicExample from './Contacto-form';
 
 const Contacto = () => {
   return (
-    <div>
+    <div className='contacto_responsive'>
         <div className='contacto_contenedor'>
             <h1 className='contacto_contenedor-titulo'>Comunicate con nosotros!</h1>
         </div>
