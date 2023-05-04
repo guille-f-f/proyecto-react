@@ -1,5 +1,5 @@
 import React from 'react'
-import '../NuevaColeccion/Coleccion.css'
+import '../estilos/Coleccion.css'
 
 const Coleccion = () => {
   return (

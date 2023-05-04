@@ -1,14 +1,22 @@
-import React from 'react'
-import '../estilos/Preguntas.css';
-import { PregComp } from './PregComp';
-
+import TarjetaPreguntas from '../Componentes/TarjetaPreguntas';
+import PregContenedor from '../Componentes/PregContenedor';
+import datos from "../datos/Preguntas.json"
 
 const Preguntas = () => {
   return (
-    <div className='preguntas'>
-    <h1 className='preguntas_titulo'>Preguntas Frecuentes</h1>
-    <PregComp />
-    </div>
+   
+   <PregContenedor> 
+      {datos.map( pregunta =>      
+        <TarjetaPreguntas 
+           key = {pregunta.id}
+           titulo = {pregunta.titulo}
+           texto = {pregunta.texto}
+        
+        />
+      )}
+
+   </PregContenedor> 
+   
   )
 }
 
