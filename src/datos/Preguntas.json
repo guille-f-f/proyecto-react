@@ -1,0 +1,27 @@
+[
+    {
+        "id" : "1",
+        "titulo" : "Cuánto demora el envio de mi pedido?",
+        "texto" : "El envío de los pedidos demora entre 7 a 10 días hábiles desde que se confirma la compra."
+    },
+    {
+        "id" : "2",
+        "titulo" : "Cuánto tiempo tengo para devolver un pedido?",
+        "texto" : "Tenes 60 días a partir de la entrega de tu pedido para iniciar un proceso de devolución y hasta 180 días por calidad."
+    },
+    {
+        "id" : "3",
+        "titulo" : "Puedo realizar cambios en la tienda?",
+        "texto" : "Sí, es posible realizar cambios de talle o de artículo en tienda."
+    },
+    {
+        "id" : "4",
+        "titulo" : "Cómo puedo realizar el seguimiento de mi pedido?",
+        "texto" : "A través de nuestra sección de 'Seguimiento de Pedidos' con tu número de orden."
+    },
+    {
+        "id" : "5",
+        "titulo" : "Con qué opciones de pago cuento?",
+        "texto" : "Pagos con Tarjeta de Crédito / Débito ( VISA, MasterCard y American Express)."
+    }
+]
