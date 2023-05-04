@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { Datos } from "./Rutas";
 import '../estilos/Navbar.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -22,10 +23,10 @@ const Navbar = () => {
     <div className='Navbar'>
       <img className="nav-logo" src="https://1000marcas.net/wp-content/uploads/2019/11/Adidas-Logo-1967-768x432.jpg" alt="" />
       <div className={`nav-items ${isOpen && "open"}`}>
-        <a href="/">Home</a>
-        <a href="/productos">Productos</a>
-        <a href="/contacto">Contacto</a>
-        <a href="/preguntas">Preguntas</a>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/productos">Productos</NavLink>
+        <NavLink to="/contacto">Contacto</NavLink>
+        <NavLink to="/preguntas">Preguntas</NavLink>
         
         <FontAwesomeIcon className="icono" icon={faSearch} />
         <MostrarCarrito carrito={carrito} eliminarDeCarrito={eliminarDeCarrito} limpiarCarrito={limpiarCarrito} />
