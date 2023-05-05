@@ -11,7 +11,6 @@
 .carrusel p{
     color: #F9D949;
 }
-
 @media (max-width: 900px){
     .carrusel{
         margin-left: 50px;

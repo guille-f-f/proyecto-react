@@ -7,6 +7,7 @@ import Carrito from "../componentes/Carrito/Carrito";
 import Preguntas from "../paginas/Preguntas";
 import Contacto from "../paginas/Contacto";
 import Footer from "./Footer";
+import { TYPES } from "./Carrito/actions";
 
 export const Datos = createContext();
 
@@ -17,7 +18,8 @@ const Rutas = () => {
     productos: productos,
     carrito: carrito,
     show: show,
-    dispatch: dispatch,
+    TYPES: TYPES,
+    dispatch: dispatch
   };
 
   return (
@@ -31,7 +33,7 @@ const Rutas = () => {
             <Route path="/preguntas" element={<Preguntas />} />
             <Route path="/contacto" element={<Contacto />} />
           </Routes>
-        <Footer />
+          <Footer />
         </Datos.Provider>
       </BrowserRouter>
     </div>
