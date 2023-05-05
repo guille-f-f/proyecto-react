@@ -20,7 +20,7 @@ const Navbar = () => {
   const nuevoCarrito = carrito.map(item => item.cantidad)
 
   return (
-    <div className='Navbar'>
+    <div className='Navbar position-relative'>
       <img className="nav-logo" src="https://1000marcas.net/wp-content/uploads/2019/11/Adidas-Logo-1967-768x432.jpg" alt="" />
       <div className={`nav-items ${isOpen && "open"}`}>
         <NavLink to="/">Home</NavLink>
@@ -30,7 +30,7 @@ const Navbar = () => {
         
         <FontAwesomeIcon className="icono" icon={faSearch} />
         <MostrarCarrito carrito={carrito} eliminarDeCarrito={eliminarDeCarrito} limpiarCarrito={limpiarCarrito} />
-        <p className="position-fixed top-0 end-0 m-1 fw-bold">
+        <p className="position-absolute z-2 top-0 end-0 m-1 fw-bold ">
           {nuevoCarrito.reduce((a, b) => a + b, 0)}
         </p>
         
