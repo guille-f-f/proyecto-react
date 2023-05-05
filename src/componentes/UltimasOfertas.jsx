@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Datos } from "./Rutas";
 import '../estilos/UltimasOfertas.css';
+import { Link } from "react-router-dom";
 import Boton from "./Boton";
 
 const UltimasOfertas = () => {
@@ -20,6 +21,12 @@ const UltimasOfertas = () => {
     numeroAleatorioFiltrado,
     4
   );
+  const handleScrollToTop = () => {
+    window.scrollTo({   
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   return (
     <section className="section--showsale">
       <h3 className="tarjetas__titulo">SHOW <span className="tarjetas__titulo--color">SALE!!</span></h3>
@@ -34,7 +41,9 @@ const UltimasOfertas = () => {
                     src={producto.imagen1}
                     alt={`Imagen ${producto.id}`}
                   />
-                  <Boton valor="SHOWROOM" />
+                  <Link to="/productos" onClick={handleScrollToTop}>
+                    <Boton valor="SHOWROOM" />
+                  </Link>
                 </div>
                 <div className="tarjeta__datos">
                   <h4 className="tarjeta__titulo">{producto.nombre + " " + producto.marca}</h4>
