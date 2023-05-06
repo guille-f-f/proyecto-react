@@ -16,8 +16,8 @@ const Carrito = () => {
 
   const nuevoCarrito = carrito.map(item => item.cantidad)
   return (
-    <div>
-      <h2 id="productos--ancla" className="d-flex justify-content-center m-2">Nuestros Productos</h2>
+    <div className="d-flex flex-column align-items-center">
+      <h1 id="productos--ancla" className="d-flex justify-content-center m-2 fs-1">Nuestros Productos</h1>
       <Carrusel />
       {/* Mapear productos */}
       <ul className='tarjetas'>

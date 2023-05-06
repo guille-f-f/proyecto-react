@@ -20,10 +20,14 @@ function MostrarCarrito({carrito, eliminarDeCarrito, limpiarCarrito}) {
 
       <Modal fullscreen='md-down' backdrop='true' show={show} onHide={handleClose} >
         <Modal.Header closeButton >
-          <Modal.Title className='modal__title'>Carrito</Modal.Title>
+          <Modal.Title className='modal__title'><h3>Carrito</h3></Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          {carrito.map(item => <Item key={item.id} data={item} eliminarDeCarrito={eliminarDeCarrito} limpiarCarrito={limpiarCarrito} />)}
+        <Modal.Body >
+          {
+            carrito.length === 0 
+            ? <h5>No hay productos añadidos al carrito...</h5>
+            : carrito.map(item => <Item key={item.id} data={item} eliminarDeCarrito={eliminarDeCarrito} limpiarCarrito={limpiarCarrito} />) 
+          }
         </Modal.Body>
         <Modal.Footer>
           <Button variant="light" className='modal__button' onClick={handleClose}>
