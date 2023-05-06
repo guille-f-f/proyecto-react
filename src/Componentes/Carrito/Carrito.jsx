@@ -18,7 +18,9 @@ const Carrito = () => {
   return (
     <div className="d-flex flex-column align-items-center">
       <h1 id="productos--ancla" className="d-flex justify-content-center m-2 fs-1">Nuestros Productos</h1>
-      <Carrusel />
+      <div className="w-100">
+        <Carrusel />
+      </div>
       {/* Mapear productos */}
       <ul className='tarjetas'>
         {productos.map(producto => <Producto data={producto} agregarAlCarrito={agregarAlCarrito} mostrarProducto={mostrarProducto} />)}
