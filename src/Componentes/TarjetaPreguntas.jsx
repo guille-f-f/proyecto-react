@@ -1,11 +1,11 @@
 import React from 'react'
 import '../estilos/TarjetaPreguntas.css'
 
-const TarjetaPreguntas = (props) => {
+const TarjetaPreguntas = ({titulo="titulo", texto="texto"}) => {
   return (
     <div className='pregunta'>
-        <h3>{props.titulo}</h3>
-        <p>{props.texto}</p>
+        <h3>{titulo}</h3>
+        <p>{texto}</p>
     </div>
   )
 }

@@ -1,6 +1,7 @@
-import { useReducer, createContext } from "react";
+import { useReducer, useEffect, createContext } from "react";
 import { carritoReducer, carritoInitialState } from "./Carrito/carritoReducer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import axios from "axios";
 import Navbar from "./Navbar";
 import Homepage from "../paginas/Homepage";
 import Carrito from "../componentes/Carrito/Carrito";
@@ -12,6 +13,18 @@ import { TYPES } from "./Carrito/actions";
 export const Datos = createContext();
 
 const Rutas = () => {
+
+  const actualizarState = async () => {
+    const productosURL = "http://localhost:3000/productos";
+    const resProductos = await axios.get(productosURL);
+    const nuevoProducto = await resProductos.data;
+    dispatch({type: TYPES.READ_STATE, payload: nuevoProducto})
+  }
+  useEffect(() => {
+    actualizarState();
+  }, [])
+  
+  
   const [stateCart, dispatch] = useReducer(carritoReducer, carritoInitialState);
   const { productos, carrito, show } = stateCart;
   const context = {
