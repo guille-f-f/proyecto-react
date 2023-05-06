@@ -6,7 +6,6 @@ import Boton from "./Boton";
 
 const UltimasOfertas = () => {
   const { productos, carrito, show, dispatch } = useContext(Datos);
-  console.log(productos)
   const productosBonificados = productos.filter((producto) => {
     if (producto.descuento) {
       return producto;

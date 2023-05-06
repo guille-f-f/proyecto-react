@@ -1,14 +1,19 @@
-import Data from "../../datos/productos.json"
 import { TYPES } from "./actions";
 
 export const carritoInitialState = {
-  productos: Data,
+  productos: [],
   carrito: [],
   show: []
 }
 
 export const carritoReducer = (state, action) => {
   switch(action.type){
+    case TYPES.READ_STATE:
+      return {
+        ...state,
+        productos: action.payload
+      }
+    
     case TYPES.SHOW_PRODUCT:
       const vistaPrevia = state.productos.find(producto => producto.id === action.payload)
       return {

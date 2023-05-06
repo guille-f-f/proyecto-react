@@ -14,7 +14,6 @@ const Preguntas = () => {
         
         />
       )}
-
    </PregContenedor> 
    
   )
