@@ -2,14 +2,20 @@
     background-color: #EEEEEE;
     height: 500px;
 }
+
+.carrusel_contenedor button {
+    border: none !important;
+}
+
 .carrusel{
-    margin-left: 370px;
+    margin: auto !important;
     width: 500px;
     height: 425px;
 }
 
 .carrusel p{
     color: #F9D949;
+    text-shadow: 0 0 2px #000000;
 }
 @media (max-width: 900px){
     .carrusel{

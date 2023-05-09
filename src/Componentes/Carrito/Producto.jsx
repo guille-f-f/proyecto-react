@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../estilos/UltimasOfertas.css'
+import '../../estilos/TarjetaProductos.css'
 import Boton from '../Boton'
 import MostrarProducto from './MostrarProducto'
 
