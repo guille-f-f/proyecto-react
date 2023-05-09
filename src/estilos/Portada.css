@@ -4,7 +4,6 @@
     background-image: right;
     background-attachment: fixed;
     background-size: 100% 100%;
-    background-position: right;
 }
 
 .portada /*texto*/ {
@@ -20,10 +19,12 @@
 
 .portada_titulo-color{
     color: #FFF1DC;
+    font-weight: 800;
+    text-shadow: 0 0 3px #0B2447;
 }
 
 .portada_subtitulo{
-    color: black;
+    color: #000000;
     margin-top: 25px;
     margin-left: 330px;
     width: 400px;
@@ -31,6 +32,7 @@
 }
 
 .portada_btn{
+    width: fit-content;
     margin-left: 400px;
     margin-top: 20px;
     font-weight: 800;
@@ -43,7 +45,6 @@
     transition: all 0.3s ease 0s;
     display: flex;  
 }
-
 
 .portada_btn:hover{
     background: #0B2447;

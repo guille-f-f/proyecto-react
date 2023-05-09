@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #3A98B9;
-  
+    box-shadow: 0 0px 6px black;
 }
 
 .Navbar > .nav-logo{

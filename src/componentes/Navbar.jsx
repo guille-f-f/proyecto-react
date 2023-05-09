@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Datos } from "./Rutas";
 import "../estilos/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,12 +21,14 @@ const Navbar = () => {
   const nuevoCarrito = carrito.map((item) => item.cantidad);
 
   return (
-    <div className="Navbar position-relative">
-      <img
-        className="nav-logo"
-        src="https://1000marcas.net/wp-content/uploads/2019/11/Adidas-Logo-1967-768x432.jpg"
-        alt=""
-      />
+    <div className="Navbar position-relative overflow-hidden pb-1 ">
+      <Link to="/">
+        <img
+          className="nav-logo w-25"
+          src="https://1000marcas.net/wp-content/uploads/2019/11/Adidas-Logo-1967-768x432.jpg"
+          alt=""
+        />
+      </Link>
       <div className={`nav-items ${isOpen && "open"}`}>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/productos">Productos</NavLink>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../estilos/Contacto.css';
 import BasicExample from './Contacto-form';
 
@@ -25,10 +26,10 @@ const Contacto = () => {
           <div className='redes_sociales'>
             <h4 className='direccion_titulo'>Seguinos!</h4>
             <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Youtube</a></li>
-              <li><a href="#">Tiktok</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li><Link to="*">Instagram</Link></li>
+              <li><Link to="*">Youtube</Link></li>
+              <li><Link to="*">Tiktok</Link></li>
+              <li><Link to="*">Facebook</Link></li>
             </ul>
 
           </div>
