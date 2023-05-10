@@ -1,16 +1,18 @@
 /* Estilos de clase */
 .boton {
-    position: absolute;
-    right: 5px;
-    bottom: 0px;
-    padding: 5px 20px;
-    border: none;
-    background-color: rgb(255, 255, 255); 
-    font-size: .9rem;
-    user-select: none;
-    cursor: pointer;
-    transition: 0.05s;
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  padding: 5px 20px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.05s;
+  box-shadow: none;
 }
 .boton:hover {
-    color: rgb(31, 191, 39);
+  color: rgb(31, 191, 39);
+  box-shadow: none;
 }

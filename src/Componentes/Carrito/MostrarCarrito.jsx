@@ -1,22 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button, Modal } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCartShopping,
-  faShoppingCart,
-} from "@fortawesome/free-solid-svg-icons";
-import Item from "./Item";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { Button, Modal } from "react-bootstrap";
 import "../../estilos/Modal.css";
+import Item from "./Item";
 
 function MostrarCarrito({ carrito, eliminarDeCarrito, limpiarCarrito }) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const styles = {
-    color: "#afaf0f",
-    cursor: "pointer",
-  };
+
   return (
     <>
       <FontAwesomeIcon

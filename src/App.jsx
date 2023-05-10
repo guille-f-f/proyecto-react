@@ -1,12 +1,12 @@
-import './estilos/App.css'
-import Rutas from './componentes/Rutas'
+import "./estilos/App.css";
+import Rutas from "./componentes/Rutas";
 
 function App() {
   return (
     <div className="App">
       <Rutas />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

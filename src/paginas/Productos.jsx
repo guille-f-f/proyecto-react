@@ -1,12 +1,12 @@
-import React from 'react'
-import Carrito from "../componentes/Carrito/Carrito"
+import React from "react";
+import Carrito from "../componentes/Carrito/Carrito";
 
 const Productos = () => {
   return (
     <>
-      <Carrito /> 
+      <Carrito />
     </>
-  )
-}
+  );
+};
 
-export default Productos
+export default Productos;

@@ -14,17 +14,16 @@ import { TYPES } from "./Carrito/actions";
 export const Datos = createContext();
 
 const Rutas = () => {
-
   const actualizarState = async () => {
     const productosURL = "http://localhost:3000/productos";
     const resProductos = await axios.get(productosURL);
     const nuevoProducto = await resProductos.data;
-    dispatch({type: TYPES.READ_STATE, payload: nuevoProducto})
-  }
+    dispatch({ type: TYPES.READ_STATE, payload: nuevoProducto });
+  };
   useEffect(() => {
     actualizarState();
-  }, [])
-    
+  }, []);
+
   const [stateCart, dispatch] = useReducer(carritoReducer, carritoInitialState);
   const { productos, carrito, show } = stateCart;
 
@@ -33,7 +32,7 @@ const Rutas = () => {
     carrito: carrito,
     show: show,
     TYPES: TYPES,
-    dispatch: dispatch
+    dispatch: dispatch,
   };
 
   return (
@@ -46,7 +45,7 @@ const Rutas = () => {
             <Route path="/productos" element={<Productos />} />
             <Route path="/preguntas" element={<Preguntas />} />
             <Route path="/contacto" element={<Contacto />} />
-            <Route path="*" element={<Error />} /> {/* ruta "not found" */} 
+            <Route path="*" element={<Error />} /> {/* ruta "not found" */}
           </Routes>
           <Footer />
         </Datos.Provider>

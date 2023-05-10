@@ -8,14 +8,15 @@ import Descuento from "../componentes/Descuento";
 
 const Homepage = () => {
   return (
-  <>
-  <Portada />
-  <UltimasOfertas />
-  <TarjetasConfort />
-  <Descuento />
-  <Coleccion />
-  <Carrusel />
-  </>
-)};
+    <>
+      <Portada />
+      <UltimasOfertas />
+      <TarjetasConfort />
+      <Descuento />
+      <Coleccion />
+      <Carrusel />
+    </>
+  );
+};
 
 export default Homepage;

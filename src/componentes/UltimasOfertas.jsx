@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Datos } from "./Rutas";
-import '../estilos/TarjetaProductos.css';
+import "../estilos/TarjetaProductos.css";
 import { Link } from "react-router-dom";
 import Boton from "./Boton";
 
@@ -21,14 +21,16 @@ const UltimasOfertas = () => {
     4
   );
   const handleScrollToTop = () => {
-    window.scrollTo({   
+    window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
   return (
     <section className="section--showsale">
-      <h3 className="tarjetas__titulo">SHOW <span className="tarjetas__titulo--color">SALE!!</span></h3>
+      <h3 className="tarjetas__titulo">
+        SHOW <span className="tarjetas__titulo--color">SALE!!</span>
+      </h3>
       <div className="tarjetas">
         {productosRenderizados.map((producto) => {
           if (producto.descuento) {
@@ -45,17 +47,20 @@ const UltimasOfertas = () => {
                   </Link>
                 </div>
                 <div className="tarjeta__datos">
-                  <h4 className="tarjeta__titulo">{producto.nombre + " " + producto.marca}</h4>
+                  <h4 className="tarjeta__titulo">
+                    {producto.nombre + " " + producto.marca}
+                  </h4>
                   <p>{producto.descripcion}</p>
-                  <h3 className="tarjeta__precio--anulado">$ {producto.precio}</h3>
+                  <h3 className="tarjeta__precio--anulado">
+                    $ {producto.precio}
+                  </h3>
                   <h3 className="tarjeta__descuento">
                     -%{producto.porcentajeDeDescuento}
                   </h3>
                   <h3 className="tarjeta__precio--final">
                     ${" "}
                     {producto.precio -
-                      (producto.precio * producto.porcentajeDeDescuento) /
-                        100}
+                      (producto.precio * producto.porcentajeDeDescuento) / 100}
                   </h3>
                 </div>
               </div>
