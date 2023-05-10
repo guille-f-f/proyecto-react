@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../estilos/Contacto.css';
-import BasicExample from './Contacto-form';
+import BasicExample from '../componentes/Contacto-form';
 
 const Contacto = () => {
   return (

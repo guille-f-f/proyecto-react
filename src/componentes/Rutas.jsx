@@ -24,10 +24,10 @@ const Rutas = () => {
   useEffect(() => {
     actualizarState();
   }, [])
-  
-  
+    
   const [stateCart, dispatch] = useReducer(carritoReducer, carritoInitialState);
   const { productos, carrito, show } = stateCart;
+
   const context = {
     productos: productos,
     carrito: carrito,
@@ -46,7 +46,7 @@ const Rutas = () => {
             <Route path="/productos" element={<Productos />} />
             <Route path="/preguntas" element={<Preguntas />} />
             <Route path="/contacto" element={<Contacto />} />
-            <Route path="*" element={<Error />} /> {/* ruta not found */} 
+            <Route path="*" element={<Error />} /> {/* ruta "not found" */} 
           </Routes>
           <Footer />
         </Datos.Provider>
