@@ -1,17 +1,15 @@
-import React from 'react'
-
 const VistaPrevia = (props) => {
-
-  const { id, nombre, marca, descripcion, precio } = props.data
+  const { id, nombre, marca, descripcion, precio } = props.data;
 
   return (
     <li key={id}>
-      <h4>{nombre} {marca}</h4>
-      {/* <img src="" alt="Imagen" /> */}
+      <h4>
+        {nombre} {marca}
+      </h4>
       <h5>{descripcion}</h5>
       <h5>{precio}</h5>
     </li>
-  )
-}
+  );
+};
 
-export default VistaPrevia
+export default VistaPrevia;

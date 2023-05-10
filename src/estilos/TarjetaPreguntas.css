@@ -1,8 +1,7 @@
-.pregunta{
-    margin: 10px;
-    padding: 10px;
-    background-color: #EEEEEE;
-    border: 1px solid #5454D4;
-    border-radius: 6px;
-
+.pregunta {
+  margin: 10px;
+  padding: 10px;
+  background-color: #eeeeee;
+  border: 1px solid #5454d4;
+  border-radius: 6px;
 }

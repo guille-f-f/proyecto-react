@@ -1,28 +1,33 @@
 /* Raiz */
 :root {
-    --fuente-principal: sans-serif;
-} 
-
+  --fuente-principal: sans-serif;
+}
 
 /* Estilos generales */
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, p, button {
-    margin: 0;
-    padding: 0;
-    font-family: var(--fuente-principal);
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fuente-principal);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
-.App{
-    /* background-color: #FFF1DC; */
-    height: 100vh;
+.App {
+  /* background-color: #FFF1DC; */
+  height: 100vh;
 }
