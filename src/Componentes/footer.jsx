@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer__section">
         {/* Footer head --> */}
         <div className="footer__head">
-        <span className="footer__title">Back to top</span>
+          <span className="footer__title">Back to top</span>
         </div>
 
         {/* Footer body */}
