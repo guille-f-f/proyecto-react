@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../estilos/Footer.css";
+import Scrolltop from "./Buttonscroll";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className="footer__section">
         {/* Footer head --> */}
         <div className="footer__head">
-          <span className="footer__title">Back to top</span>
+          <Buttonscroll>
         </div>
 
         {/* Footer body */}
