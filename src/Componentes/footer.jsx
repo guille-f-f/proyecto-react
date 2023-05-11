@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../estilos/Footer.css";
-import Scrolltop from "./Buttonscroll";
+import Scrolltop from "./buttonscroll";
 
 const Footer = () => {
   return (
