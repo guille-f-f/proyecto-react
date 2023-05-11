@@ -37,5 +37,3 @@ function Scrolltop () {
             )}
         </div>
 }
-
-export default Scrolltop;
