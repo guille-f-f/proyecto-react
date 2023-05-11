@@ -23,8 +23,7 @@ function Scrolltop () {
 
         return <div className="buttom">
             {Scrolltop && (
-                <button
-                style={{
+                <button style={{
                     position:"fixed",
                     bottom: "50px",
                     left: "50px",
@@ -32,7 +31,7 @@ function Scrolltop () {
                     width: "50px",
                     fontSize: "50px",
                 }}
-
+                    onClick={scrollup}
                 >
                     Back to top</button>
             )}
