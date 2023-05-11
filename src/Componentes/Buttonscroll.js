@@ -32,7 +32,7 @@ function Scrolltop () {
                     width: "50px",
                     fontSize: "50px",
                 }}
-                onClick={scrollup}
+
                 >
                     Back to top</button>
             )}
