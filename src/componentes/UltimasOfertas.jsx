@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
-import { Datos } from "../App";
-import '../estilos/UltimasOfertas.css';
+import { Datos } from "./Rutas";
+import "../estilos/TarjetaProductos.css";
+import { Link } from "react-router-dom";
 import Boton from "./Boton";
 
 const UltimasOfertas = () => {
-  const productos = useContext(Datos);
+  const { productos, carrito, show, dispatch } = useContext(Datos);
   const productosBonificados = productos.filter((producto) => {
     if (producto.descuento) {
       return producto;
@@ -19,9 +20,17 @@ const UltimasOfertas = () => {
     numeroAleatorioFiltrado,
     4
   );
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="section--showsale">
-      <h3 className="tarjetas__titulo">SHOW <span className="tarjetas__titulo--color">SALE!!</span></h3>
+      <h3 className="tarjetas__titulo">
+        SHOW <span className="tarjetas__titulo--color">SALE!!</span>
+      </h3>
       <div className="tarjetas">
         {productosRenderizados.map((producto) => {
           if (producto.descuento) {
@@ -33,20 +42,25 @@ const UltimasOfertas = () => {
                     src={producto.imagen1}
                     alt={`Imagen ${producto.id}`}
                   />
-                  <Boton valor="SHOWROOM" />
+                  <Link to="/productos" onClick={handleScrollToTop}>
+                    <Boton valor="SHOWROOM" />
+                  </Link>
                 </div>
                 <div className="tarjeta__datos">
-                  <h5>{producto.nombre + " " + producto.marca}</h5>
+                  <h4 className="tarjeta__titulo">
+                    {producto.nombre + " " + producto.marca}
+                  </h4>
                   <p>{producto.descripcion}</p>
-                  <h3 className="tarjeta__precio">$ {producto.precio}</h3>
+                  <h3 className="tarjeta__precio--anulado">
+                    $ {producto.precio}
+                  </h3>
                   <h3 className="tarjeta__descuento">
                     -%{producto.porcentajeDeDescuento}
                   </h3>
                   <h3 className="tarjeta__precio--final">
                     ${" "}
                     {producto.precio -
-                      (producto.precio * producto.porcentajeDeDescuento) /
-                        100}
+                      (producto.precio * producto.porcentajeDeDescuento) / 100}
                   </h3>
                 </div>
               </div>

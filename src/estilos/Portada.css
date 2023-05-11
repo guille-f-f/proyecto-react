@@ -1,69 +1,76 @@
 .portada /*imagen*/ {
-    background-image: url(https://controlpublicidad.com/uploads/2020/03/space-race-adidas-mediacom-095415.jpg);
-    height: 500px;
-    background-image: right;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-position: right;
+  background-image: url(https://controlpublicidad.com/uploads/2020/03/space-race-adidas-mediacom-095415.jpg);
+  height: 500px;
+  background-image: right;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .portada /*texto*/ {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.portada_titulo{
-    font-size: 50px;
-    margin-left: 100px;
-    color: #3A98B9;
+.portada_titulo {
+  font-size: 50px;
+  margin-left: 100px;
+  color: #3a98b9;
 }
 
-.portada_titulo-color{
-    color: #FFF1DC;
+.portada_titulo-color {
+  color: #fff1dc;
+  font-weight: 800;
+  text-shadow: 0 0 3px #0b2447;
 }
 
-.portada_subtitulo{
-    color: black;
-    margin-top: 25px;
-    margin-left: 330px;
-    width: 400px;
-    text-align: left;
+.portada_subtitulo {
+  color: #000000;
+  margin-top: 25px;
+  margin-left: 330px;
+  width: 400px;
+  text-align: left;
 }
 
-.portada_btn{
-    margin-left: 400px;
-    margin-top: 20px;
-    font-weight: 800;
-    color: #577D86;
-    padding: 9px 25px;
-    background-color: #B9EDDD;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    display: flex;  
+.portada_btn {
+  width: fit-content;
+  margin-left: 400px;
+  margin-top: 20px;
+  font-weight: 800;
+  color: #577d86;
+  padding: 9px 25px;
+  background-color: #b9eddd;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  display: flex;
 }
 
-
-.portada_btn:hover{
-    background: #0B2447;
-    color: #F5F3C1;
-    transform: scale(1.1);
+.portada_btn:hover {
+  background: #0b2447;
+  color: #f5f3c1;
+  transform: scale(1.1);
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
+  .portada_subtitulo {
+    margin-left: 30px;
+  }
 
-    .portada_subtitulo{
-        margin-left: 30px;
+  .portada_btn {
+    margin-left: 30px;
+  }
+
+  @media (max-width: 600px) {
+    .portada_titulo {
+      font-size: 40px;
     }
 
-    .portada_btn{
-        margin-left: 30px;
+    @media (max-width: 400px) {
+      .portada_subtitulo {
+        font-size: 20px;
+        width: 200px;
+      }
     }
-
- @media (max-width: 600px){
-    .portada_titulo{
-        font-size: 40px;
-    }
-}
+  }
 }

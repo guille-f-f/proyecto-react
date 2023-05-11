@@ -1,18 +1,12 @@
-import './estilos/App.css'
-import { createContext } from 'react'
-import BaseDeDatos from './datos/productos.json'
-import Rutas from './componentes/Rutas'
-
-export const Datos = createContext(); 
+import "./estilos/App.css";
+import Rutas from "./componentes/Rutas";
 
 function App() {
   return (
     <div className="App">
-      <Datos.Provider value={BaseDeDatos}>
-        <Rutas />
-      </Datos.Provider>
+      <Rutas />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
