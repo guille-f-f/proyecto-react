@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer__section">
         {/* Footer head --> */}
         <div className="footer__head">
-          <Scrolltop />
+          <<<Scrolltop />
         </div>
 
         {/* Footer body */}
