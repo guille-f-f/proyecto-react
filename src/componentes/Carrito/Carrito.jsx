@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Datos } from "../Rutas";
+import { Datos } from "../../rutas/Rutas";
 import "../../estilos/TarjetaProductos.css";
 import Producto from "./Producto";
 import TarjetasConfort from "../TarjetasConfort";

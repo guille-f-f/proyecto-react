@@ -1,15 +1,15 @@
 import { useReducer, useEffect, createContext } from "react";
-import { carritoReducer, carritoInitialState } from "./Carrito/carritoReducer";
+import { carritoReducer, carritoInitialState } from "../componentes/Carrito/carritoReducer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
-import Navbar from "./Navbar";
+import Navbar from "../componentes/Navbar";
 import Homepage from "../paginas/Homepage";
 import Productos from "../paginas/Productos";
 import Preguntas from "../paginas/Preguntas";
 import Contacto from "../paginas/Contacto";
 import Error from "../paginas/Error";
-import Footer from "./Footer";
-import { TYPES } from "./Carrito/actions";
+import Footer from "../componentes/Footer";
+import { TYPES } from "../componentes/Carrito/actions";
 
 export const Datos = createContext();
 
