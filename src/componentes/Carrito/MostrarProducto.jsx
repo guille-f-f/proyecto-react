@@ -27,7 +27,7 @@ const MostrarProducto = ({ data, mostrarProducto, agregarAlCarrito }) => {
         alt="imagen"
         onClick={eventsImage}
         role="button"
-        className="w-100"
+        className="modal__imagen w-100"
       />
 
       <Modal show={show} onHide={handleClose}>
