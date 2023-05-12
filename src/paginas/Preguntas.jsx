@@ -1,6 +1,6 @@
 import TarjetaPreguntas from "../componentes/TarjetaPreguntas";
 import PregContenedor from "../componentes/PregContenedor";
-import datos from "../datos/reguntas.json";
+import datos from "../datos/preguntas.json";
 
 const Preguntas = () => {
   return (
