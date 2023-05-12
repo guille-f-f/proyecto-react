@@ -4,6 +4,7 @@ const Error = () => {
       <h1>ATENCION!!</h1>
       <h3>Esta sección se encuentra en desarrollo.</h3>
       <h3>Muy pronto tendremos disponible el contenido.</h3>
+      <h3>CONOCE MÁS SOBRE NOSOTROS</h3>
       <h2>GRACIAS</h2>
     </div>
   );
