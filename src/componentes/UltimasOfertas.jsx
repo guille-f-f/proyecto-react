@@ -1,11 +1,11 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { Datos } from "../rutas/Rutas";
 import "../estilos/TarjetaProductos.css";
-import { Link } from "react-router-dom";
 import Boton from "./Boton";
 
 const UltimasOfertas = () => {
-  const { productos, carrito, show, dispatch } = useContext(Datos);
+  const { productos } = useContext(Datos);
   const productosBonificados = productos.filter((producto) => {
     if (producto.descuento) {
       return producto;

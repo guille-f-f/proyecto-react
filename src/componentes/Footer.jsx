@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../estilos/Footer.css";
+import footerDatos from "../datos/footerDatos.json";
 
 const Footer = () => {
   return (
@@ -13,153 +14,62 @@ const Footer = () => {
         {/* Footer body */}
         <div className="footer__body">
           <div className="footer__body--col1">
-            <div className="footer__title">Get to Know Us</div>
+            <div className="footer__title">
+              {footerDatos.primerColumna.titulo}
+            </div>
             <ul className="footer__list">
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Carrers
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Blog
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  About Adidas Corporation INC
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Investor Relations
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Adidas Devices
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Adidas Science
-                </Link>
-              </li>
+              {footerDatos.primerColumna.items.map((item) => (
+                <li className="footer__item">
+                  <Link to="*" className="footer__link">
+                    {item.texto}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
+
           <div className="footer__body--col2">
-            <div className="footer__title">Make Money with Us</div>
+            <div className="footer__title">
+              {footerDatos.segundaColumna.titulo}
+            </div>
             <ul className="footer__list">
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Sell products on Adidas
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Sell on Adidas Business
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Sell apps on Adidas
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Become an Affiliate
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Advertise Your Products
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Self-Publish with Us
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Host an Adidas Hub
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  See More Make Money with Us
-                </Link>
-              </li>
+              {footerDatos.segundaColumna.items.map((item) => (
+                <li className="footer__item">
+                  <Link to="*" className="footer__link">
+                    {item.texto}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
+
           <div className="footer__body--col3">
-            <div className="footer__title">Adidas Payment Products</div>
+            <div className="footer__title">
+              {footerDatos.terceraColumna.titulo}
+            </div>
             <ul className="footer__list">
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Adidas Business Card
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Shop with Points
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Reload Your Balance
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Adidas Currency Converter
-                </Link>
-              </li>
+              {footerDatos.terceraColumna.items.map((item) => (
+                <li className="footer__item">
+                  <Link to="*" className="footer__link">
+                    {item.texto}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
+
           <div className="footer__body--col4">
-            <div className="footer__title">Let Us Help You</div>
+            <div className="footer__title">
+              {footerDatos.cuartaColumna.titulo}
+            </div>
             <ul className="footer__list">
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Adidas and COVID-19
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Your Account
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Your Orders
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Shipping Rates & Policies
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Returns & Replacements
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Manage Your Content and Devices
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Amazon Assistant
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="*" className="footer__link">
-                  Help
-                </Link>
-              </li>
+              {footerDatos.cuartaColumna.items.map((item) => (
+                <li className="footer__item">
+                  <Link to="*" className="footer__link">
+                    {item.texto}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

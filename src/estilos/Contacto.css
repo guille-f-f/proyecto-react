@@ -1,4 +1,4 @@
-.contacto_contenedor {
+.contacto__contenedor {
   height: 500px;
   width: 100%;
   background-image: url(https://media.revistagq.com/photos/5e0605b0aec425000859123f/master/w_1920,h_1440,c_limit/unnamed.jpg);
@@ -7,19 +7,16 @@
   background-image: fixed;
   background-size: cover;
   background-position: left;
-}
-
-.contacto_contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contacto_contenedor-titulo {
+.contacto__contenedor--titulo {
   color: blanchedalmond;
 }
 
-.contacto_contenedor-dos {
+.contacto__contenedor--dos {
   display: flex;
   justify-content: space-around;
   margin: 15px;
@@ -27,14 +24,14 @@
 }
 
 @media (max-width: 900px) {
-  .contacto_contenedor-dos {
+  .contacto__contenedor--dos {
     display: flex;
     flex-direction: column;
     margin: 20px;
     padding: 15px;
   }
 
-  .direccion_titulo {
+  .direccion__titulo {
     margin-top: 20px;
   }
 }

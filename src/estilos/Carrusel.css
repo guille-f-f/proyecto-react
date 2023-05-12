@@ -1,30 +1,31 @@
-.carrusel_contenedor {
+.carrusel {
   background-color: #eeeeee;
   height: 500px;
 }
 
-.carrusel_contenedor button {
+.carrusel button {
   border: none !important;
 }
 
-.carrusel {
+.carrusel__contenedor {
   margin: auto !important;
   width: 500px;
   height: 425px;
 }
 
-.carrusel p {
+.carrusel__contenedor p {
   color: #f9d949;
   text-shadow: 0 0 2px #000000;
 }
+
 @media (max-width: 900px) {
-  .carrusel {
+  .carrusel__contenedor {
     margin-left: 50px;
   }
 }
 
 @media (max-width: 700px) {
-  .carrusel {
+  .carrusel__contenedor {
     width: 300px;
   }
 }
