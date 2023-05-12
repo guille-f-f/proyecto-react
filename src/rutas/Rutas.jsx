@@ -39,7 +39,6 @@ const Rutas = () => {
     <div>
       <BrowserRouter>
         <Datos.Provider value={context}>
-          <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/productos" element={<Productos />} />
@@ -47,6 +46,7 @@ const Rutas = () => {
             <Route path="/contacto" element={<Contacto />} />
             <Route path="*" element={<Error />} /> {/* ruta "not found" */}
           </Routes>
+          <Navbar />
           <Footer />
         </Datos.Provider>
       </BrowserRouter>
