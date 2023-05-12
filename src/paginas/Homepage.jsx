@@ -1,4 +1,3 @@
-import React from "react";
 import UltimasOfertas from "../componentes/UltimasOfertas";
 import Carrusel from "../componentes/Carrusel";
 import Coleccion from "../componentes/Coleccion";

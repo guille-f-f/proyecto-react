@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../estilos/Descuento.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

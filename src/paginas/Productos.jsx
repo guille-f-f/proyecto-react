@@ -1,5 +1,4 @@
-import React from "react";
-import Carrito from "../archivos/Carrito/Carrito";
+import Carrito from "../componentes/Carrito/Carrito";
 
 const Productos = () => {
   return (

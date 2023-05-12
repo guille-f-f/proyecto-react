@@ -1,5 +1,3 @@
-import React from "react";
-
 const Error = () => {
   return (
     <div className="d-flex flex-column gap-2 m-4 align-items-center text-center">

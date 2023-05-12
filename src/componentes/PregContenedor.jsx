@@ -1,4 +1,3 @@
-import React from "react";
 import "../estilos/Preguntas.css";
 
 const PregContenedor = (props) => {

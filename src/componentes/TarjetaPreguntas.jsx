@@ -1,4 +1,3 @@
-import React from "react";
 import "../estilos/TarjetaPreguntas.css";
 
 const TarjetaPreguntas = ({ titulo = "titulo", texto = "texto" }) => {

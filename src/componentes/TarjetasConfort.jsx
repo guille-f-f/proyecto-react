@@ -1,4 +1,3 @@
-import React from "react";
 import "../estilos/TarjetasConfort.css";
 import TarjetaConfortComponente from "./TarjetaConfortComponente";
 
