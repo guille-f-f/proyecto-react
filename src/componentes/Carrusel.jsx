@@ -10,7 +10,7 @@ const Carrusel = () => {
           {carruselDatos.map((item) => {
             return (
               <Carousel.Item key={item.id} interval={2000}>
-                <img className="d-block w-100" src={item.src} alt={item.alt} />
+                <img className="carrusel__image d-block w-100" src={item.src} alt={item.alt} />
                 <Carousel.Caption>
                   <p>Seguinos @Indumentaria</p>
                 </Carousel.Caption>
