@@ -30,6 +30,7 @@ const Carrito = () => {
       <ul className="tarjetas">
         {productos.map((producto) => (
           <Producto
+            key={producto.id}
             data={producto}
             agregarAlCarrito={agregarAlCarrito}
             mostrarProducto={mostrarProducto}
