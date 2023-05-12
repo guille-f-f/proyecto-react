@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { Datos } from "./Rutas";
+import { Datos } from "../rutas/Rutas";
 import "../estilos/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
