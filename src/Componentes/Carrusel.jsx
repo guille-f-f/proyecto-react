@@ -1,4 +1,4 @@
-import carruselData from "../assets/carruselData.json";
+import carruselData from "../datos/carruselData.json";
 import "../estilos/Carrusel.css";
 import Carousel from "react-bootstrap/Carousel";
 
