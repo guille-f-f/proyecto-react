@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
             <ul className="footer__list">
               {footerDatos.primerColumna.items.map((item) => (
-                <li className="footer__item">
+                <li key={item.id} className="footer__item">
                   <Link to="*" className="footer__link">
                     {item.texto}
                   </Link>
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <ul className="footer__list">
               {footerDatos.segundaColumna.items.map((item) => (
-                <li className="footer__item">
+                <li key={item.id} className="footer__item">
                   <Link to="*" className="footer__link">
                     {item.texto}
                   </Link>
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
             <ul className="footer__list">
               {footerDatos.terceraColumna.items.map((item) => (
-                <li className="footer__item">
+                <li key={item.id} className="footer__item">
                   <Link to="*" className="footer__link">
                     {item.texto}
                   </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
             <ul className="footer__list">
               {footerDatos.cuartaColumna.items.map((item) => (
-                <li className="footer__item">
+                <li key={item.id} className="footer__item">
                   <Link to="*" className="footer__link">
                     {item.texto}
                   </Link>
