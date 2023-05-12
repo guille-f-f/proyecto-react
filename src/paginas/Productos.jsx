@@ -1,5 +1,5 @@
 import React from "react";
-import Carrito from "../componentes/Carrito/Carrito";
+import Carrito from "../archivos/Carrito/Carrito";
 
 const Productos = () => {
   return (
