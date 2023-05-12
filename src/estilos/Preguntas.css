@@ -1,23 +1,6 @@
-.preguntas_titulo {
+.preguntas__titulo {
   display: flex;
   justify-content: center;
   padding: 10px;
   color: black;
-}
-
-.preguntas {
-  display: flex;
-  flex-direction: column;
-}
-
-.preguntas_contenedor {
-  margin: 10px;
-  padding: 10px;
-  background-color: #eeeeee;
-  border: 1px solid #5454d4;
-  border-radius: 6px;
-}
-
-.preguntas_subtitulo {
-  color: #3a98b9;
 }

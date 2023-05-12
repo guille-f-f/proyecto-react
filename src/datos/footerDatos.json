@@ -1,0 +1,100 @@
+{
+  "primerColumna": {
+    "titulo": "Get to Know Us",
+    "items": [
+      {
+        "texto": "Carrers"
+      },
+      {
+        "texto": "Blog"
+      },
+      {
+        "texto": "About Adidas Corporation INC"
+      },
+      {
+        "texto": "Investor Relations"
+      },
+      {
+        "texto": "Adidas Devices"
+      },
+      {
+        "texto": "Adidas Science"
+      }
+    ]
+  },
+  "segundaColumna": {
+    "titulo": "Make Money with Us",
+    "items": [
+      {
+        "texto": "Sell products on Adidas"
+      },
+      {
+        "texto": "Sell on Adidas Business"
+      },
+      {
+        "texto": "Sell apps on Adidas"
+      },
+      {
+        "texto": "Become an Affiliate"
+      },
+      {
+        "texto": "Advertise Your Products"
+      },
+      {
+        "texto": "Self-Publish with Us"
+      },
+      {
+        "texto": "Host an Adidas Hub"
+      },
+      {
+        "texto": "See More Make Money with Us"
+      }
+    ]
+  },
+  "terceraColumna": {
+    "titulo": "Adidas Payment Products",
+    "items": [
+      {
+        "texto": "Adidas Business Card"
+      },
+      {
+        "texto": "Shop with Points"
+      },
+      {
+        "texto": "Reload Your Balance"
+      },
+      {
+        "texto": "Adidas Currency Converter"
+      }
+    ]
+  },
+  "cuartaColumna": {
+    "titulo": "Let Us Help You",
+    "items": [
+      {
+        "texto": "Adidas and COVID-19"
+      },
+      {
+        "texto": "Your Account"
+      },
+      {
+        "texto": "Your Orders"
+      },
+      {
+        "texto": "Shipping Rates & Policies"
+      },
+      {
+        "texto": "Returns & Replacements"
+      },
+      {
+        "texto": "Manage Your Content and Devices"
+      },
+      {
+        "texto": "Adidas Assistant"
+      },
+      {
+        "texto": "Help"
+      }
+    ]
+  }
+}

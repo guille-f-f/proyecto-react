@@ -11,19 +11,19 @@
   align-items: center;
 }
 
-.portada_titulo {
+.portada__titulo {
   font-size: 50px;
   margin-left: 100px;
   color: #3a98b9;
 }
 
-.portada_titulo-color {
+.portada__titulo--color {
   color: #fff1dc;
   font-weight: 800;
   text-shadow: 0 0 3px #0b2447;
 }
 
-.portada_subtitulo {
+.portada__subtitulo {
   color: #000000;
   margin-top: 25px;
   margin-left: 330px;
@@ -31,7 +31,7 @@
   text-align: left;
 }
 
-.portada_btn {
+.portada__btn {
   width: fit-content;
   margin-left: 400px;
   margin-top: 20px;
@@ -46,28 +46,28 @@
   display: flex;
 }
 
-.portada_btn:hover {
+.portada__btn:hover {
   background: #0b2447;
   color: #f5f3c1;
   transform: scale(1.1);
 }
 
 @media (max-width: 1000px) {
-  .portada_subtitulo {
+  .portada__subtitulo {
     margin-left: 30px;
   }
 
-  .portada_btn {
+  .portada__btn {
     margin-left: 30px;
   }
 
   @media (max-width: 600px) {
-    .portada_titulo {
+    .portada__titulo {
       font-size: 40px;
     }
 
     @media (max-width: 400px) {
-      .portada_subtitulo {
+      .portada__subtitulo {
         font-size: 20px;
         width: 200px;
       }

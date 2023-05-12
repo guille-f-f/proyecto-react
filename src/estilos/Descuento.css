@@ -1,4 +1,4 @@
-.descuento_contenedor {
+.descuento__contenedor {
   background-color: #e5e5f7;
   opacity: 0.8;
   background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
@@ -20,12 +20,12 @@
   align-items: center;
 }
 
-.descuento_titulo {
+.descuento__titulo {
   margin: 5px;
   padding: 15px;
 }
 
-.descuento_boton {
+.descuento__boton {
   margin: 5px;
   padding: 5px;
   width: 200px;
