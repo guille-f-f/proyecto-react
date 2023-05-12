@@ -1,7 +1,6 @@
 .Navbar {
   height: 60px;
   position: relative;
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,7 +90,7 @@
     transform: translateX(-100%);
     transition: all 0.45s;
     min-height: 100vh;
-    z-index: 2999 !important;
+    z-index: 999;
   }
 
   .Navbar > .nav-items > a::before {
