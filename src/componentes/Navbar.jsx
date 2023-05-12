@@ -21,7 +21,7 @@ const Navbar = () => {
   const nuevoCarrito = carrito.map((item) => item.cantidad);
 
   return (
-    <div className="Navbar position-relative overflow-hidden pb-1 ">
+    <div className="Navbar pb-1">
       <Link to="/">
         <img
           className="nav-logo w-25"
@@ -41,7 +41,7 @@ const Navbar = () => {
           eliminarDeCarrito={eliminarDeCarrito}
           limpiarCarrito={limpiarCarrito}
         />
-        <p className="position-absolute z-2 top-0 end-0 m-1 fw-bold ">
+        <p className="Navbar__contador position-absolute z-2 top-0 end-0 m-1 fw-bold ">
           {nuevoCarrito.reduce((a, b) => a + b, 0)}
         </p>
       </div>
