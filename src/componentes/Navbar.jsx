@@ -21,7 +21,7 @@ const Navbar = () => {
   const nuevoCarrito = carrito.map((item) => item.cantidad);
 
   return (
-    <div className="Navbar position-relative overflow-hidden pb-1 ">
+    <div className="Navbar pb-1 ">
       <Link to="/">
         <img
           className="nav-logo w-25"
